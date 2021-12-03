@@ -87,7 +87,12 @@ button {
   width: 125px;
   height: 125px;
 }
-
+.single-item-price{
+  color: white;
+}
+.in-stock{
+  color: white;
+}
 @media only screen and (max-width: 600px) {
   .store--item-list {
     grid-template-columns: repeat(3, 125px);
@@ -203,14 +208,25 @@ button {
   padding: 0.5rem 1rem;
 
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-auto-flow: row;
   align-items: center;
 }
-
+.total-list{
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
 .total-number {
   font-weight: bold;
 }
-
+.delete-section{
+  display: grid;
+}
+.delete-section button{
+  background-color: var(--primary-color-darker);
+  color: white;
+  text-transform: none;
+  font-size: 1rem;
+}
 @media only screen and (max-width: 450px) {
   .total-section {
     border-top: 2px solid #00675b;
